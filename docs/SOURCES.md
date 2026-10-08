@@ -1,0 +1,2 @@
+Libraries: pdf-lib (https://pdf-lib.js.org), pdf.js (https://mozilla.github.io/pdf.js), qpdf WebAssembly build @neslinesli93/qpdf-wasm (https://www.npmjs.com/package/@neslinesli93/qpdf-wasm), @imgly/background-removal (https://www.npmjs.com/package/@imgly/background-removal), qrcode (https://www.npmjs.com/package/qrcode), JSZip (https://stuk.github.io/jszip/).
+Fonts are bundled from @fontsource packages, nothing is loaded from Google at runtime.

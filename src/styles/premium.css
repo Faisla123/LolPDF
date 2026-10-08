@@ -1,0 +1,47 @@
+/* Black, white, orange. Motion is a detail, not a reason to wait. */
+html { scrollbar-color:#ff6b00 #080808; scrollbar-width:thin; }
+::-webkit-scrollbar { width:9px; height:9px; }
+::-webkit-scrollbar-track { background:#080808; }
+::-webkit-scrollbar-thumb { background:#ff6b00; border-radius:8px; border:2px solid #080808; }
+::selection { background:#ff6b00; color:#080808; }
+.site-header { background:rgba(8,8,8,.94); }
+.logo-word span { color:#ff6b00; }
+.nav a.active { background:#222; }
+.search-btn { background:#141414; color:#fff; border-color:#333; }
+.search-btn:hover { border-color:#ff6b00; }
+.btn { border-radius:6px; transition:transform .45s var(--ease),background .3s,border-color .3s; }
+.btn-primary, .btn-ghost, .btn-primary:not(:disabled):hover { background:#b84200; color:#fff; border:1px solid #ff6b00; box-shadow:none; }
+.btn-primary:not(:disabled):hover, .btn-ghost:not(:disabled):hover { background:#c64a00; transform:translateY(-2px); box-shadow:none; }
+/* The saturated orange edge keeps white button text readable. */
+.btn-primary { background:linear-gradient(135deg,#bb4500,#a83e00); }
+.tool-card { background:#101010; border-color:#292929; border-radius:8px; min-height:184px; transition:transform .6s var(--ease),border-color .35s,background .35s; }
+.tool-card:hover { background:#151515; border-color:#ff6b00; box-shadow:none; transform:translateY(-4px); }
+.tool-icon, .tool-card:nth-child(4n+2) .tool-icon, .tool-card:nth-child(4n+3) .tool-icon { background:#202020; color:#ff6b00; border-color:#383838; box-shadow:none; }
+.badge { background:#252525; color:#fff; border-color:#444; }
+.chip { background:#151515; color:#ddd; border-color:#444; }
+.chip.is-on, .segmented button.is-on { background:#b84200; color:#fff; border-color:#ff6b00; }
+.input, .color-input { background-color:#141414; color:#fff; border-color:#555; color-scheme:dark; }
+.input:focus { box-shadow:0 0 0 2px #ff6b0030; }
+.segmented { background:#101010; }
+.segmented button { color:#ddd; }
+.dropzone { background:#101010; border-color:#666; }
+.dropzone:hover, .dropzone.is-over { background:#19120d; border-color:#ff6b00; }
+.dz-icon { background:#211810; color:#ff6b00; border-color:#684023; }
+.ws-card { box-shadow:none; background:#101010; }
+.privacy-note { background:#171717; border-color:#454545; color:#ddd; }
+.result { box-shadow:none; background:#101010; }
+.result-notes li { background:#202020; border-color:#444; }
+.result-tick { background:#222; color:#ff6b00; }
+.result-previews figure.is-checker { background:repeating-conic-gradient(#313131 0% 25%,#1b1b1b 0% 50%) 50% / 18px 18px; }
+.progress i { background:#ff6b00; }
+.file-badge { background:#222; color:#fff; }
+.overlay { background:rgba(0,0,0,.7); backdrop-filter:blur(6px); }
+.palette, .dialog { background:#111; box-shadow:0 25px 100px #000; }
+.site-footer { background:#0d0d0d; }
+.cursor-file { filter:drop-shadow(2px 3px 0 #ff6b0050); }
+.cursor-label { background:#ff6b00; color:#080808; border:0; }
+.reveal { transform:translate3d(0,20px,0); transition:opacity .85s var(--ease),transform .85s var(--ease); }
+.reveal.is-in { transform:translate3d(0,0,0); }
+.skeleton { border-color:#333; background:linear-gradient(100deg,#181818 30%,#282828 50%,#181818 70%); background-size:220% 100%; }
+@media(max-width:760px){.skeleton-work{grid-template-columns:1fr}.skeleton-options{height:160px}}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}.skeleton{animation:none}.cursor-ring{display:none!important}}

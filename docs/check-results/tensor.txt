@@ -1,0 +1,1 @@
+PASS static adapter matches contiguous ndarray get/set/stride for 3D and 4D image tensors

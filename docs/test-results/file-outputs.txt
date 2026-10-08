@@ -1,0 +1,51 @@
+
+> lolpdf@1.0.0 test
+> node scripts/e2e.mjs
+
+big.pdf 5996528 bytes
+PASS  merge: 5 pages  []
+PASS  merge: friendly name
+PASS  merge: refuses one file  Add at least 2 files.
+PASS  split ranges: 2 files in zip  split-pdf.zip
+PASS  split delete: 2 pages left
+PASS  split: out-of-range page gives message  Page 9 is outside this file. It has 3 pages.
+PASS  rotate: all pages 90
+PASS  crop: smaller page  343.307
+PASS  compress: target 200KB hit  190834 bytes []
+PASS  compress: output valid pdf
+PASS  compress light works  []
+PASS  organize: 2 pages after delete  []
+Trying to parse invalid object: {"line":12,"column":6,"offset":130})
+Invalid object ref: 2 0 R
+PASS  protect: file is encrypted
+PASS  unlock: wrong password reported  That password did not open this file.
+PASS  unlock: right password gives 3 pages  []
+PASS  metadata: title and author gone  undefined|undefined|undefined
+PASS  watermark (Hindi) produces pdf
+PASS  page numbers produces pdf
+PASS  extract text contains Alpha page 2  Alpha page 1
+
+Alpha page 2
+
+Alpha page 3
+
+
+PASS  pdf to jpg: 3 images  pdf-to-jpg.zip
+PASS  images to pdf: 2 pages
+PASS  scan to pdf: 1 page
+PASS  sign: pdf produced
+PASS  repair: pdf produced
+PASS  compress image: under 50KB  48603
+PASS  resize image: named with size  photo-one-800x600.jpg
+PASS  convert image: webp  pic.webp
+PASS  strip photo data works
+PASS  passport: photo + sheet zip  passport-photo-maker.zip 
+PASS  remove background (needs internet for model)  []
+PASS  qr: preview image shown
+PASS  route / loads
+PASS  route /tools loads
+PASS  route /privacy loads
+PASS  route /merge-pdf loads
+PASS  route /nonsense-page loads
+
+36 passed, 0 failed

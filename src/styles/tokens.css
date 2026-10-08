@@ -1,0 +1,20 @@
+:root {
+  --bg: #080808;
+  --bg-2: #0f0f0f;
+  --surface: #141414;
+  --surface-2: #202020;
+  --line: #303030;
+  --line-strong: #555555;
+  --text: #ffffff;
+  --muted: #bdbdbd;
+  --accent: #ff6b00;
+  --accent-2: #ff6b00;
+  --accent-ink: #ffffff;
+  --good: #ffffff;
+  --bad: #ffb48c;
+  --radius: 8px;
+  --radius-sm: 5px;
+  --font: 'Inter Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-display: 'Bricolage Grotesque Variable', 'Inter Variable', system-ui, sans-serif;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}

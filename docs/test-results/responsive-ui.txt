@@ -1,0 +1,94 @@
+
+> lolpdf@1.0.0 test:ui
+> node scripts/redesign-checks.mjs
+
+PASS CSP header delivered locally
+PASS opening loader present
+PASS background inert while opening
+PASS opening loader completes
+PASS background restored after opening
+PASS happy-file cursor shown
+PASS intro not replayed on same-session reload
+PASS Ctrl K search filters tools
+PASS search selection opens correct tool
+PASS no AI labels in visible copy
+PASS no horizontal overflow 320 /
+PASS no AI labels 320 /
+PASS no horizontal overflow 320 /tools
+PASS no AI labels 320 /tools
+PASS no horizontal overflow 320 /privacy
+PASS no AI labels 320 /privacy
+PASS no horizontal overflow 320 /merge-pdf
+PASS no AI labels 320 /merge-pdf
+PASS no horizontal overflow 320 /compress-pdf
+PASS no AI labels 320 /compress-pdf
+PASS no horizontal overflow 320 /organize-pdf
+PASS no AI labels 320 /organize-pdf
+PASS no horizontal overflow 320 /remove-background
+PASS no AI labels 320 /remove-background
+PASS no horizontal overflow 320 /passport-photo-maker
+PASS no AI labels 320 /passport-photo-maker
+PASS no horizontal overflow 320 /qr-code-generator
+PASS no AI labels 320 /qr-code-generator
+PASS no horizontal overflow 390 /
+PASS no AI labels 390 /
+PASS no horizontal overflow 390 /tools
+PASS no AI labels 390 /tools
+PASS no horizontal overflow 390 /privacy
+PASS no AI labels 390 /privacy
+PASS no horizontal overflow 390 /merge-pdf
+PASS no AI labels 390 /merge-pdf
+PASS no horizontal overflow 390 /compress-pdf
+PASS no AI labels 390 /compress-pdf
+PASS no horizontal overflow 390 /organize-pdf
+PASS no AI labels 390 /organize-pdf
+PASS no horizontal overflow 390 /remove-background
+PASS no AI labels 390 /remove-background
+PASS no horizontal overflow 390 /passport-photo-maker
+PASS no AI labels 390 /passport-photo-maker
+PASS no horizontal overflow 390 /qr-code-generator
+PASS no AI labels 390 /qr-code-generator
+PASS no horizontal overflow 768 /
+PASS no AI labels 768 /
+PASS no horizontal overflow 768 /tools
+PASS no AI labels 768 /tools
+PASS no horizontal overflow 768 /privacy
+PASS no AI labels 768 /privacy
+PASS no horizontal overflow 768 /merge-pdf
+PASS no AI labels 768 /merge-pdf
+PASS no horizontal overflow 768 /compress-pdf
+PASS no AI labels 768 /compress-pdf
+PASS no horizontal overflow 768 /organize-pdf
+PASS no AI labels 768 /organize-pdf
+PASS no horizontal overflow 768 /remove-background
+PASS no AI labels 768 /remove-background
+PASS no horizontal overflow 768 /passport-photo-maker
+PASS no AI labels 768 /passport-photo-maker
+PASS no horizontal overflow 768 /qr-code-generator
+PASS no AI labels 768 /qr-code-generator
+PASS no horizontal overflow 1440 /
+PASS no AI labels 1440 /
+PASS no horizontal overflow 1440 /tools
+PASS no AI labels 1440 /tools
+PASS no horizontal overflow 1440 /privacy
+PASS no AI labels 1440 /privacy
+PASS no horizontal overflow 1440 /merge-pdf
+PASS no AI labels 1440 /merge-pdf
+PASS no horizontal overflow 1440 /compress-pdf
+PASS no AI labels 1440 /compress-pdf
+PASS no horizontal overflow 1440 /organize-pdf
+PASS no AI labels 1440 /organize-pdf
+PASS no horizontal overflow 1440 /remove-background
+PASS no AI labels 1440 /remove-background
+PASS no horizontal overflow 1440 /passport-photo-maker
+PASS no AI labels 1440 /passport-photo-maker
+PASS no horizontal overflow 1440 /qr-code-generator
+PASS no AI labels 1440 /qr-code-generator
+PASS cursor hidden on touch with reduced-motion preference
+PASS mobile menu opens
+PASS mobile menu closes after selection
+PASS intro skipped for reduced motion
+PASS cursor hidden for reduced motion
+PASS no runtime errors
+PASS no CSP violations during UI checks
+89 passed, 0 failed

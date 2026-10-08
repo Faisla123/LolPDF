@@ -1,0 +1,52 @@
+PASS percent counter present
+PASS orb present
+PASS ten strips before completion
+PASS touch cursor hidden without reduced motion
+PASS body locked during intro
+PASS 320 layout fine at 8%
+PASS 320 orb in viewport at 8%
+PASS 320 counter in viewport at 8%
+PASS 320 layout fine at 45%
+PASS 320 orb in viewport at 45%
+PASS 320 counter in viewport at 45%
+PASS 320 layout fine at 80%
+PASS 320 orb in viewport at 80%
+PASS 320 counter in viewport at 80%
+PASS counter reaches 100
+PASS lol letters visible
+PASS laughing face visible
+PASS 320 lol letters in viewport
+PASS strips are ten percent
+PASS cloned scenes are frozen
+PASS no opacity fade
+PASS body scrolling restored
+PASS black background
+PASS white body text
+PASS orange scrollbar
+PASS orange accent
+PASS white button text
+PASS 390 full tool route merge-pdf
+PASS 390 full tool route split-pdf
+PASS 390 full tool route organize-pdf
+PASS 390 full tool route rotate-pdf
+PASS 390 full tool route compress-pdf
+PASS 390 full tool route repair-pdf
+PASS 390 full tool route image-to-pdf
+PASS 390 full tool route pdf-to-jpg
+PASS 390 full tool route extract-text-from-pdf
+PASS 390 full tool route scan-to-pdf
+PASS 390 full tool route watermark-pdf
+PASS 390 full tool route add-page-numbers-to-pdf
+PASS 390 full tool route crop-pdf
+PASS 390 full tool route sign-pdf
+PASS 390 full tool route protect-pdf
+PASS 390 full tool route unlock-pdf
+PASS 390 full tool route clean-pdf-metadata
+PASS 390 full tool route remove-background
+PASS 390 full tool route compress-image
+PASS 390 full tool route resize-image
+PASS 390 full tool route convert-image
+PASS 390 full tool route passport-photo-maker
+PASS 390 full tool route remove-photo-metadata
+PASS 390 full tool route qr-code-generator
+51 premium checks passed

@@ -1,0 +1,18 @@
+.util-card { display: grid; gap: 18px; background: var(--bg-2, #111); border: 1px solid var(--line, #2a2a2a); border-radius: 16px; padding: 20px; margin-block: 8px 28px; }
+.util-grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.util-text { width: 100%; min-height: 120px; resize: vertical; font: 14px/1.55 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; white-space: pre; overflow: auto; }
+.util-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px; }
+.util-stats { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); }
+.util-stat { border: 1px solid var(--line, #2a2a2a); border-radius: 12px; padding: 12px 14px; display: grid; gap: 4px; }
+.util-stat span { font-size: 12px; opacity: 0.65; }
+.util-stat b { font-size: 20px; word-break: break-all; }
+.util-stat.is-big b { font-size: 30px; color: var(--accent, #ff7a1a); }
+.util-swatches { display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); }
+.util-swatch { border-radius: 12px; overflow: hidden; border: 1px solid var(--line, #2a2a2a); font: 12px ui-monospace, monospace; }
+.util-swatch i { display: block; height: 54px; }
+.util-swatch span { display: block; padding: 6px 8px; }
+.util-diff { font: 13px/1.6 ui-monospace, Menlo, Consolas, monospace; border: 1px solid var(--line, #2a2a2a); border-radius: 12px; padding: 10px 0; overflow: auto; max-height: 460px; }
+.util-diff div { padding: 0 14px; white-space: pre-wrap; word-break: break-word; }
+.util-diff .add { background: rgba(60, 180, 90, 0.18); }
+.util-diff .del { background: rgba(220, 70, 70, 0.2); }
+.util-ok { color: #4ade80; } .util-bad { color: #f87171; }

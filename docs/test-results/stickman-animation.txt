@@ -1,0 +1,27 @@
+desktop 389 frames, actual timestamps
+mobile 387 frames, actual timestamps
+PASS desktop stickman joint rig
+PASS desktop background inert
+PASS desktop phase 0 no overflow
+PASS desktop phase 0 character in view
+PASS desktop phase 1 no overflow
+PASS desktop phase 1 character in view
+PASS desktop phase 2 no overflow
+PASS desktop phase 2 character in view
+PASS desktop slide not fade
+PASS desktop background enabled
+PASS desktop no runtime errors
+PASS desktop no CSP violations
+PASS mobile stickman joint rig
+PASS mobile background inert
+PASS mobile phase 0 no overflow
+PASS mobile phase 0 character in view
+PASS mobile phase 1 no overflow
+PASS mobile phase 1 character in view
+PASS mobile phase 2 no overflow
+PASS mobile phase 2 character in view
+PASS mobile slide not fade
+PASS mobile background enabled
+PASS mobile no runtime errors
+PASS mobile no CSP violations
+24 stickman checks passed

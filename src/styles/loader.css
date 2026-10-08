@@ -1,0 +1,48 @@
+/* Percent loader -> LOL beat -> ten-strip wipe. Black, white, orange. */
+.intro-loader { position: fixed; inset: 0; z-index: 900; pointer-events: auto; }
+.intro-scene { position: absolute; inset: 0; width: 100%; height: 100dvh; background: #080808; overflow: hidden; }
+.intro-top { position: absolute; top: 0; left: 0; right: 0; display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 24px 26px 0; color: #8a8a8a; font: 10px ui-monospace, monospace; letter-spacing: .14em; }
+.intro-top > span:first-child { color: #fff; font: 800 30px 'Bricolage Grotesque Variable', var(--font); letter-spacing: -.05em; }
+.intro-brand-dot { color: #ff6b00; }
+.intro-stage { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; gap: clamp(6px, 2.4vw, 34px); }
+.intro-orb { width: min(44vw, 300px); height: auto; display: block; }
+.is-lol .intro-orb { animation: orb-pop .6s cubic-bezier(.34, 1.56, .64, 1); }
+@keyframes orb-pop { 0% { transform: scale(1); } 35% { transform: scale(1.13, .85); } 70% { transform: scale(.95, 1.06); } 100% { transform: scale(1); } }
+.lol-face { opacity: 0; transition: opacity .16s ease .04s; }
+.is-lol .lol-face { opacity: 1; }
+.lol-letter { font: 800 clamp(104px, 23vw, 290px)/1 'Bricolage Grotesque Variable', var(--font); color: #fff; letter-spacing: -.045em; opacity: 0; user-select: none; }
+.is-lol .lol-letter { opacity: 1; animation: lol-slam .55s cubic-bezier(.22, 1.35, .36, 1); }
+.is-lol .lol-right { animation-delay: .08s; }
+@keyframes lol-slam { 0% { opacity: 0; transform: scale(2.5) rotate(-7deg); } 60% { opacity: 1; transform: scale(.94) rotate(1.2deg); } 100% { opacity: 1; transform: scale(1) rotate(0); } }
+.intro-count { position: absolute; left: 24px; bottom: 18px; font: 800 clamp(88px, 16.5vw, 215px)/0.95 'Bricolage Grotesque Variable', var(--font); letter-spacing: -.055em; color: #fff; font-variant-numeric: tabular-nums; }
+.intro-count-sign { font-size: .3em; letter-spacing: 0; color: #ff6b00; margin-left: .05em; }
+.is-lol .intro-count, .is-lol .intro-cap-count { visibility: hidden; }
+.intro-caption { position: absolute; right: 26px; bottom: 34px; font: 10px ui-monospace, monospace; letter-spacing: .14em; color: #8a8a8a; }
+.intro-cap-lol { display: none; color: #ff6b00; }
+.is-lol .intro-cap-lol { display: inline; }
+.intro-bar { position: absolute; left: 0; bottom: 0; width: 100%; height: 3px; background: #1b1b1b; }
+.intro-bar i { display: block; height: 100%; background: #ff6b00; transform: scaleX(.01); transform-origin: left; }
+/* Ten opaque viewport slices. Each starts 90ms after the last, L/R/L/R. */
+.intro-strips { position: absolute; inset: 0; visibility: hidden; }
+.intro-strip { position: absolute; width: 100%; height: calc(10% + .5px); overflow: hidden; background: #080808; transform: translate3d(0, 0, 0); transition: transform .9s cubic-bezier(.76, 0, .24, 1); will-change: transform; }
+.intro-strip .intro-scene { bottom: auto; }
+.intro-strip * { animation: none !important; transition: none !important; }
+.is-exiting > .intro-scene { visibility: hidden; }
+.is-exiting .intro-strips { visibility: visible; }
+.is-exiting .exit-left { transform: translate3d(-101%, 0, 0); }
+.is-exiting .exit-right { transform: translate3d(101%, 0, 0); }
+@media (max-width: 640px) {
+  .intro-top { padding: 18px 18px 0; }
+  .intro-top > span:first-child { font-size: 24px; }
+  .intro-orb { width: min(52vw, 240px); }
+  .lol-letter { font-size: clamp(84px, 25vw, 150px); }
+  .intro-count { left: 18px; bottom: 16px; }
+  .intro-caption { right: 18px; bottom: 26px; font-size: 9px; }
+}
+@media (prefers-reduced-motion: reduce) { .intro-loader { display: none; } }
+
+/* The same LOL reveal, at browsing speed after the full opening. */
+.intro-loader.is-quick .intro-strip { transition-duration: .32s; }
+.intro-loader.is-quick .is-lol .intro-orb { animation-duration: .3s; }
+.intro-loader.is-quick .is-lol .lol-letter { animation-duration: .28s; }
+.intro-loader.is-quick .is-lol .lol-right { animation-delay: .06s; }

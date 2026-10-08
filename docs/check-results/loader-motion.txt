@@ -1,0 +1,37 @@
+desktop 302 frames, actual timestamps
+mobile 301 frames, actual timestamps
+PASS desktop counter and orb
+PASS desktop background inert
+PASS desktop 12% no overflow
+PASS desktop 12% orb in view
+PASS desktop 52% no overflow
+PASS desktop 52% orb in view
+PASS desktop 90% no overflow
+PASS desktop 90% orb in view
+PASS desktop hit 100 percent
+PASS desktop LOL letters in view
+PASS desktop laughing face shown
+PASS desktop opaque ten strips
+PASS desktop alternating directions
+PASS desktop slices are sequential
+PASS desktop background enabled
+PASS desktop no runtime errors
+PASS desktop no CSP violations
+PASS mobile counter and orb
+PASS mobile background inert
+PASS mobile 12% no overflow
+PASS mobile 12% orb in view
+PASS mobile 52% no overflow
+PASS mobile 52% orb in view
+PASS mobile 90% no overflow
+PASS mobile 90% orb in view
+PASS mobile hit 100 percent
+PASS mobile LOL letters in view
+PASS mobile laughing face shown
+PASS mobile opaque ten strips
+PASS mobile alternating directions
+PASS mobile slices are sequential
+PASS mobile background enabled
+PASS mobile no runtime errors
+PASS mobile no CSP violations
+34 loader checks passed
