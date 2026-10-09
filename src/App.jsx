@@ -9,6 +9,7 @@ import ShortcutsDialog from './components/ShortcutsDialog.jsx';
 import Home from './pages/Home.jsx';
 import ToolsPage from './pages/ToolsPage.jsx';
 import Privacy from './pages/Privacy.jsx';
+import Licenses from './pages/Licenses.jsx';
 import NotFound from './pages/NotFound.jsx';
 import { TOOLS, toolPath } from './data/tools.js';
 import { useHotkeys } from './hooks/useHotkeys.js';
@@ -50,6 +51,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/tools" element={<ToolsPage />} />
             <Route path="/privacy" element={<Privacy />} />
+            <Route path="/licenses" element={<Licenses />} />
             {TOOLS.map((t) => {
               const C = TOOL_COMPONENTS[t.id];
               return <Route key={t.id} path={toolPath(t)} element={<C tool={t} />} />;

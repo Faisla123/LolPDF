@@ -27,11 +27,12 @@ function page(route, title, description, h1, intro) {
 page('/', `${SITE_NAME} - ${SITE.tagline}`, `${SITE_NAME} is a free online toolbox: merge, split, compress and sign PDFs, remove image backgrounds, resize photos and more. No sign-up, files never leave your device.`, `${SITE_NAME}: free PDF and image tools`, SITE.tagline);
 page('/tools', `All free PDF and image tools | ${SITE_NAME}`, `Every ${SITE_NAME} tool in one place. Free, no sign-up.`, 'All tools', TOOLS.map((t) => t.name).join(', '));
 page('/privacy', `Privacy | ${SITE_NAME}`, `How ${SITE_NAME} keeps your files private: everything is processed in your browser.`, 'Privacy', 'Nothing you open here is uploaded.');
+page('/licenses', `Licenses and source code | ${SITE_NAME}`, `Open source licenses, notices and source code for ${SITE_NAME}.`, 'Licenses and source code', 'lolpdf is released under AGPL-3.0.');
 for (const t of TOOLS) {
   page(`/${t.slug}`, `${t.seo} - Free, No Sign-up | ${SITE_NAME}`, `${t.seo} online for free. No account, no watermark and no upload: your files are processed inside your browser.`, t.seo, t.tagline);
 }
 
-const routes = ['/', '/tools', '/privacy', ...TOOLS.map((t) => `/${t.slug}`)];
+const routes = ['/', '/tools', '/privacy', '/licenses', ...TOOLS.map((t) => `/${t.slug}`)];
 const today = new Date().toISOString().slice(0, 10);
 fs.writeFileSync(path.join(dist, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${routes.map((r) => `  <url><loc>${SITE.url}${r === '/' ? '' : r}</loc><lastmod>${today}</lastmod></url>`).join('\n')}\n</urlset>\n`);
 fs.writeFileSync(path.join(dist, 'robots.txt'), `User-agent: *\nAllow: /\nSitemap: ${SITE.url}/sitemap.xml\n`);

@@ -35,3 +35,16 @@
   .tool-head { align-items: flex-start; }
   .result { padding: 20px; }
 }
+
+/* Licenses page */
+.licenses a { color: var(--accent); }
+.lic-list { display: grid; gap: 10px; margin: 12px 0 1em; }
+.lic-row { border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; }
+.lic-row p { margin: 4px 0 0; font-size: 14px; overflow-wrap: anywhere; }
+.lic-head { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.lic-ver { color: var(--muted); font-size: 13px; }
+.lic-tag { margin-left: auto; font-size: 12px; border: 1px solid var(--accent); color: var(--accent); border-radius: 999px; padding: 1px 9px; }
+.lic-links { display: flex; gap: 16px; }
+.lic-list.compact .lic-row { padding: 8px 12px; }
+.footer-legal a { color: var(--text); text-decoration: underline; }
+.footer-base { display: flex; flex-wrap: wrap; gap: 6px 24px; justify-content: space-between; }

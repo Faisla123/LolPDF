@@ -149,3 +149,11 @@ loader behind.
 
 Run `node scripts/route-loader-checks.mjs` against `npm run dev -- --port 4190`
 for desktop/mobile navigation checks and timestamped capture videos.
+
+## License and source
+
+lolpdf is free software under the GNU Affero General Public License v3.0 (see `LICENSE`). Copyright (C) 2026 Faisal Khan.
+
+If you run a modified copy of this site for other people, the AGPL requires you to offer them the source of your version. The deployed site links its source and all third-party notices from the footer (`/licenses`). Third-party license texts are in `public/licenses/`. After changing dependencies, run `node scripts/make-licenses.mjs` to refresh them.
+
+The repository address shown in the site footer is set in one line: `SOURCE_URL` in `src/config/site.js`.
